@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
+<?php require_once('head.php') ?>
 
-        <a href="../html/index.html" > Acceuil </a>
 
+<body>
+    <div class="container">
+        <a href="index.php" > Acceuil </a>
         <h1> Votre Galerie Pohoto </h1>
-
         <form action="galerie.php" method="get">
             <label for="date" > Date photo/vidéo : </label>
             <input type="date" id="date" name="datePhoto">
@@ -25,9 +19,8 @@
             <br>
             <input type="submit">
         </form>
+    </div>
+</body>
 
+<?php require_once ("footer.php") ?>
 
-
-    </body>
-
-</html>

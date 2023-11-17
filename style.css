@@ -1,0 +1,85 @@
+/*--------------General--------------*/
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin:0 auto ;
+}
+/*--------------Header------------------*/
+
+.titre-h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.header-bot {
+    background-color: indianred;
+    height: 60px;
+    text-align:start;
+}
+
+/*---------------Main-------------------*/
+
+.block-centre {
+    display: flex;
+}
+
+.contenu-main  {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+aside img {
+    width: 100%;
+}
+
+/*-------------Sidebar----------*/
+
+.themes-aside img {
+    width: 100%;
+}
+
+/*---------------Footer------------------*/
+
+.menu-footer li {
+    display: flex;
+    text-decoration-line: none ;
+}
+
+nav li {
+    display: flex ;
+    display: inline;
+    padding-left: 20px;
+}
+
+nav ul {
+    padding-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white ;
+}
+
+
+.parallax {
+    margin-top: 30px;
+    background-image: url(./img/bebe-d-amour.jpg);
+    background-attachment: fixed;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie de bébé</title>
-</head>
+<?php require_once ("head.php") ?>
+
     <body>
       <h1>Galerie photos/vidéos </h1>
       <br>
@@ -14,6 +9,7 @@
 
     <?php
     
+    require_once("footer.php") ;
     $dateenvoie=$_GET["datePhoto"] ; 
     $commentaire=$_GET["commentaires"] ;
     $photoPost=$_GET["photovideo"] ;
