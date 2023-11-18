@@ -1,9 +1,26 @@
-<?php require_once ("head.php") ?>
+<?php 
 
-    <body>
+require_once ("head.php") ;
+require_once("header.php") ;
 
-        <a href="index.php" > Acceuil </a>
-        <h1>Calendrier</h1>
-    </body>
+if (isset($_COOKIE['utilisateur'])) { 
+    
+?>
+    
+     <body>
+        <h1>Calendrier </h1>
+        </body>
+    </html>
+    
+    <?php
+    
+} else {
+    echo "Vous devez etre connecté pour acceder a cette page" ;
+    echo "<a href='connexion.php' title='Vous connecter'> Vous pouvez vous connecter ici </a>" ;
+}
 
-<?php require_once ("footer.php") ?>
+    require_once ("footer.php") ;
+    
+    ?>
+
+

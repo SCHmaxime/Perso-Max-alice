@@ -7,13 +7,43 @@
             <div class="container">
                 <nav class="nav1">      
                     <ul>
-                        <li> <a href="connexion.php" title="Page connexion"> Connexion </a> </li>
-                        <li> <a href="Meteo.php" > Météo </a> </li>
-                        <li> <a href="calendrier.php"> Calendier </a></li>
-                        <li> <a href="courbeBebe.php"> Croissance de bébé </a></li>
-                        <li> <a href="geolocalisation.php"> Localisation </a></li>
-                        <li> <a href="chrono.php"> Chrono </a> </li>
-                        <li> <a href="photo.php"> Galerie </a></li>
+                        <li> 
+                            <a href="connexion.php" title="Page connexion"> Connexion 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="Meteo.php" title="meteo"> Météo 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="calendrier.php" title="calendrier perso"> Calendier                               
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="courbeBebe.php" title="suivi de bebe"> Croissance de bébé                                 
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="geolocalisation.php" title="gelocalisation"> Localisation                                
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="chrono.php" title="fonction chrono"> Chrono                                
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="galerie.php" title="Vos photos"> Galerie 
+                            </a>
+                        </li>
+                        <li> <?php if (isset($_COOKIE['utilisateur'])) {
+                                        $infos=$_COOKIE['utilisateur'] ;
+                                        $arrInfos=explode("," , $infos) ;
+                                        echo "Bienvenue $arrInfos[0]" ; 
+                                    } elseif (!isset($_COOKIE['utilisateur'])){
+                                        echo "Vous êtes deconnecté" ;
+                                    }
+                            ?>
+                        </li>
                     </ul>
                 </nav>
             </div>

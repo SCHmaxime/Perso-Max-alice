@@ -1,15 +1,35 @@
-<?php require_once ("head.php") ?>
+<?php 
 
-    <body>
+require_once ("head.php") ;
+require_once("header.php") ;
+
+if (isset($_COOKIE['utilisateur'])) {
+
+?>
+
+<body>
       <h1>Galerie photos/vidéos </h1>
-      <br>
-      <a href="../html/index.html" > Acceuil </a>
+      <a href="photo.php" title="ajouter nouvelles photos/videos"> Ajouter de nouvelles Photos/Vidéos 
+
+      </a>
+    </body>
+<?php
+
+} else {
+  echo "Vous devez etre connecté pour acceder a cette page" ;
+  echo "<a href='connexion.php' title='Vous connecter'> Vous pouvez vous connecter ici </a>" ;
+}
+
+?>
+
+   
 
   
 
     <?php
     
     require_once("footer.php") ;
+
     $dateenvoie=$_GET["datePhoto"] ; 
     $commentaire=$_GET["commentaires"] ;
     $photoPost=$_GET["photovideo"] ;

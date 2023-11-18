@@ -1,9 +1,9 @@
-<?php require_once('head.php') ?>
+<?php require_once('head.php') ;
+require_once("header.php") ;
 
-
-<body>
+if (isset($_COOKIE['utilisateur'])) { ?>
+  <body>
     <div class="container">
-        <a href="index.php" > Acceuil </a>
         <h1> Votre Galerie Pohoto </h1>
         <form action="galerie.php" method="get">
             <label for="date" > Date photo/vidéo : </label>
@@ -21,6 +21,10 @@
         </form>
     </div>
 </body>
+<?php } else {
+  echo "Vous devez etre connecté pour acceder a cette page" ;
+  echo "<a href='connexion.php' title='Vous connecter'> Vous pouvez vous connecter ici </a>" ;
+}
 
-<?php require_once ("footer.php") ?>
+require_once ("footer.php") ?>
 

@@ -1,7 +1,7 @@
-<?php require_once ("head.php") ?>
+<?php require_once ("head.php") ;
+require_once("header.php") ;?>
 
     <body>
-    <a href="../html/index.html" > Acceuil </a>
      <h1>Météo</h1>
     </body>
 
