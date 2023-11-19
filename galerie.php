@@ -22,21 +22,8 @@ if (isset($_COOKIE['utilisateur'])) {
 
 ?>
 
-   
-
-  
-
     <?php
     
     require_once("footer.php") ;
 
-    $dateenvoie=$_GET["datePhoto"] ; 
-    $commentaire=$_GET["commentaires"] ;
-    $photoPost=$_GET["photovideo"] ;
-
-    echo "$dateenvoie"."$commentaire".""."$photoPost" ;
-
     ?>
-    
-    </body>
-</html>

@@ -1,4 +1,4 @@
-<?php
+<?php /*
 
 if ((!empty($_GET['user']))&&(!empty($_GET['mdp']))) {
 $prenom=$_GET["user"] ;
@@ -8,14 +8,15 @@ $strInfos=implode("," , $infos) ;
 $expire=time()+60 ;
 
 setcookie("utilisateur" , $strInfos , $expire ) ; 
-echo $_COOKIE["utilisateur"] ; 
 
-header("Location:index.php") ;
+echo "Bienvenue $prenom" ;
+header("Refresh:3 ; url=index.php") ;
 exit ;
 
 } else {
-    header("Location:connexion.php") ;
+    echo "Mdp et/ou User absent" ;
+    header("Refresh:5 ; url=connexion.php") ;
     exit ;
-}
+} */
 
 ?>

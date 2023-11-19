@@ -1,12 +1,16 @@
-<?php require_once ("head.php") ?>
+<?php 
 
-<?php require_once ("header.php") ?>
+require_once ("head.php") ;
+require_once ("header.php") ;
+
+?>
+
 
 <main>
     <div class="container">
         <div class="block-centre">
             <div class="contenu-main">
-                <h1 class="titre-h1"> Titre menu principal </h1>
+                <h1 class="titre-h1"> <?php $title="Accueil" ?> </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend dolor dolor, vitae sodales tortor mollis at. Proin eleifend ipsum a nisl finibus venenatis. Maecenas cursus ex et leo vehicula maximus. Maecenas gravida, erat quis ultrices porttitor, risus lacus ultrices tortor, eu commodo ex nisl sit amet nunc. Quisque faucibus, eros vitae posuere eleifend, justo tellus molestie diam, non iaculis lectus mauris vel nulla. Sed sit amet ultricies augue. Maecenas ex odio, vestibulum a ornare a, elementum eu nunc. Mauris rhoncus, felis tincidunt pellentesque tempus, mauris purus scelerisque augue, nec tincidunt mauris risus nec ligula. Mauris faucibus massa in dapibus malesuada. Praesent nec nulla imperdiet, ultrices turpis facilisis, lacinia erat.</p>
                 <p>Duis tempor congue metus non tincidunt. Nulla auctor nisi at sagittis volutpat. Phasellus euismod ex aliquet consectetur congue. Pellentesque feugiat imperdiet lacus, feugiat gravida dolor porttitor et. Mauris enim nisi, rhoncus eu risus vitae, pulvinar convallis tellus. Suspendisse faucibus eu ex eu commodo. Suspendisse dictum ligula odio, vitae congue magna finibus id. Ut laoreet tincidunt condimentum. Sed in cursus felis, id pellentesque odio. Donec eget felis finibus, tempor odio sagittis, aliquet velit. Proin dapibus ornare nunc et dignissim. Duis consequat odio eu dui tincidunt, non molestie risus faucibus. Vestibulum gravida augue felis, id ornare lectus pellentesque quis.</p>
                 <p>Donec non quam facilisis, viverra ante et, maximus velit. Aliquam ullamcorper ultricies dapibus. Nunc lectus ipsum, aliquet ut dapibus nec, ullamcorper ut purus. Etiam volutpat auctor tellus, vel scelerisque justo ullamcorper eu. Donec a placerat est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec commodo interdum auctor.</p>

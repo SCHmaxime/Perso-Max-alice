@@ -7,6 +7,9 @@
             <div class="container">
                 <nav class="nav1">      
                     <ul>
+                        <li>
+                            <a href="index.php" title="Retour accueil"> Accueil 
+                            </a>
                         <li> 
                             <a href="connexion.php" title="Page connexion"> Connexion 
                             </a> 
@@ -46,6 +49,11 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="file-arianne">
+                        Fil d'arianne
             </div>
         </div>
     </header>
